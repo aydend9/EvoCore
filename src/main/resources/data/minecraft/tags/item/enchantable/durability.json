@@ -1,0 +1,31 @@
+{
+  "replace": false,
+  "values": [
+    "evocore:wood_scythe",
+    "evocore:stone_scythe",
+    "evocore:iron_scythe",
+    "evocore:gold_scythe",
+    "evocore:diamond_scythe",
+    "evocore:netherite_scythe",
+    "evocore:wood_dagger",
+    "evocore:stone_dagger",
+    "evocore:iron_dagger",
+    "evocore:diamond_dagger",
+    "evocore:netherite_dagger",
+    "evocore:gold_dagger",
+    "evocore:wood_rapier",
+    "evocore:stone_rapier",
+    "evocore:iron_rapier",
+    "evocore:gold_rapier",
+    "evocore:diamond_rapier",
+    "evocore:netherite_rapier",
+    "evocore:wood_katana",
+    "evocore:stone_katana",
+    "evocore:iron_katana",
+    "evocore:gold_katana",
+    "evocore:diamond_katana",
+    "evocore:netherite_katana",
+    "evocore:ts_pmo_sword",
+    "evocore:odelkovi"
+  ]
+}

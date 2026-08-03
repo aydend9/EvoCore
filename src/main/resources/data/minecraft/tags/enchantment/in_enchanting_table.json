@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "evocore:cleave",
+    "evocore:double_jump",
+    "evocore:burst",
+    "evocore:vitality"
+  ]
+}

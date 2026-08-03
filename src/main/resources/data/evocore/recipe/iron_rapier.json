@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "combat",
+  "pattern": [
+    "  I",
+    "i I ",
+    "S i "
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "evocore:wrapped_stick"
+    }
+  },
+  "result": {
+    "id": "evocore:iron_rapier",
+    "count": 1
+  }
+}

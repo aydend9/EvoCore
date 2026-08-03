@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "evocore:wood_scythe",
+    "evocore:stone_scythe",
+    "evocore:iron_scythe",
+    "evocore:gold_scythe",
+    "evocore:diamond_scythe",
+    "evocore:netherite_scythe"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "combat",
+  "pattern": [
+    "  I",
+    " I ",
+    "S  "
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:cobblestone"
+    },
+    "S": {
+      "item": "evocore:wrapped_stick"
+    }
+  },
+  "result": {
+    "id": "evocore:stone_katana",
+    "count": 1
+  }
+}

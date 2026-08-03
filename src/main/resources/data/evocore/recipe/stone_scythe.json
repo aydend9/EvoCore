@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "combat",
+  "pattern": [
+    "DD ",
+    " WD",
+    "S  "
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:cobblestone"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "item": "evocore:wrapped_stick"
+    }
+  },
+  "result": {
+    "id": "evocore:stone_scythe",
+    "count": 1
+  }
+}

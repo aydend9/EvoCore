@@ -1,0 +1,19 @@
+{
+  "description": {
+    "translate": "enchantment.evocore.cleave"
+  },
+  "supported_items": "#evocore:scythe_enchantable",
+  "weight": 3,
+  "max_level": 3,
+  "min_cost": {
+    "base": 15,
+    "per_level_above_first": 9
+  },
+  "max_cost": {
+    "base": 30,
+    "per_level_above_first": 9
+  },
+  "anvil_cost": 4,
+  "slots": ["mainhand"],
+  "effects": {}
+}

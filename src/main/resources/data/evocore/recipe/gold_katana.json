@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "combat",
+  "pattern": [
+    "  I",
+    " I ",
+    "S  "
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:gold_ingot"
+    },
+    "S": {
+      "item": "evocore:wrapped_stick"
+    }
+  },
+  "result": {
+    "id": "evocore:gold_katana",
+    "count": 1
+  }
+}
