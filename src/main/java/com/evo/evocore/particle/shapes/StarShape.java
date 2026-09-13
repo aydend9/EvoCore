@@ -35,15 +35,6 @@ public class StarShape implements MagicShape {
 
         Vec3[] positions =
                 new Vec3[vertices];
-
-
-
-        /*
-         * Create the star points.
-         *
-         * Even indexes = outer points
-         * Odd indexes  = inner points
-         */
         for(int i = 0; i < vertices; i++) {
 
 
@@ -70,14 +61,6 @@ public class StarShape implements MagicShape {
                     );
 
         }
-
-
-
-        /*
-         * Draw the star outline.
-         *
-         * 0 -> 1 -> 2 -> 3...
-         */
         for(int i = 0; i < vertices; i++) {
 
 
@@ -96,13 +79,6 @@ public class StarShape implements MagicShape {
 
         }
 
-
-
-        /*
-         * Optional:
-         * Draw inner crossing lines
-         * to make a pentagram.
-         */
         if(points == 5) {
 
 
