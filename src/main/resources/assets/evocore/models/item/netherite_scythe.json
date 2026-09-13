@@ -6,13 +6,13 @@
   },
   "perspectives": {
     "gui": {
-      "parent": "evocore:item/netherite_scythe_2d"
+      "parent": "evocore:item/netherite_scythe_3d"
     },
     "ground": {
-      "parent": "evocore:item/netherite_scythe_2d"
+      "parent": "evocore:item/netherite_scythe_3d"
     },
     "fixed": {
-      "parent": "evocore:item/netherite_scythe_2d"
+      "parent": "evocore:item/netherite_scythe_3d"
     }
   }
 }

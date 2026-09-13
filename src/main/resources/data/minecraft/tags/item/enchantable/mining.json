@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "evocore:orichal_pickaxe",
+    "evocore:orichal_axe",
+    "evocore:orichal_shovel",
+    "evocore:orichal_hoe"
+  ]
+}

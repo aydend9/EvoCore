@@ -2,16 +2,17 @@ package com.evo.evocore.item;
 
 import com.evo.evocore.EvoCore;
 import com.evo.evocore.item.custom.*;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class ModItems {
 
     public static final DeferredRegister.Items WEAPONS =
+            DeferredRegister.createItems(EvoCore.MODID);
+    public static final DeferredRegister.Items ORICHALCUM =
             DeferredRegister.createItems(EvoCore.MODID);
 
     public static final DeferredItem<Item> EVOCORE_LOGO = WEAPONS.register(
@@ -22,6 +23,144 @@ public class ModItems {
             "wrapped_stick",
             () -> new Item(new Item.Properties())
     );
+    public static final DeferredItem<Item> ORICHALCUM_INGOT = ORICHALCUM.register(
+            "orichalcum_ingot",
+            () -> new Item(new Item.Properties())
+    );
+    public static final DeferredItem<Item> ORICHALCUM_SCRAP = ORICHALCUM.register(
+            "orichalcum_scrap",
+            () -> new Item(new Item.Properties())
+    );
+    public static final DeferredHolder<Item, Item> ORICHAL_HELMET =
+            ORICHALCUM.register("orichal_helmet", () -> new OrichalArmorItem(
+                    ModArmorMaterials.ORICHALCUM,
+                    ArmorItem.Type.HELMET,
+                    new Item.Properties().stacksTo(1),
+                    353,
+                    EvoCore.id("orichal_helmet_health")
+            ));
+
+    public static final DeferredHolder<Item, Item> ORICHAL_CHESTPLATE =
+            ORICHALCUM.register("orichal_chestplate", () -> new OrichalArmorItem(
+                    ModArmorMaterials.ORICHALCUM,
+                    ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().stacksTo(1),
+                    532,
+                    EvoCore.id("orichal_chestplate_health")
+            ));
+
+    public static final DeferredHolder<Item, Item> ORICHAL_LEGGINGS =
+            ORICHALCUM.register("orichal_leggings", () -> new OrichalArmorItem(
+                    ModArmorMaterials.ORICHALCUM,
+                    ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().stacksTo(1),
+                    494,
+                    EvoCore.id("orichal_leggings_health")
+            ));
+
+    public static final DeferredHolder<Item, Item> ORICHAL_BOOTS =
+            ORICHALCUM.register("orichal_boots", () -> new OrichalArmorItem(
+                    ModArmorMaterials.ORICHALCUM,
+                    ArmorItem.Type.BOOTS,
+                    new Item.Properties().stacksTo(1),
+                    359,
+                    EvoCore.id("orichal_boots_health")
+            ));
+    
+    public static final DeferredItem<Item> ORICHALCUM_Katana = WEAPONS.register(
+            "orichal_katana",
+            () -> new KatanaItem(
+                    ModToolTiers.ORICHALCUM,
+                    new Item.Properties().attributes(
+                            SwordItem.createAttributes(ModToolTiers.ORICHALCUM, 2, -2.0F)
+                    )
+            )
+    );
+    public static final DeferredItem<Item> ORICHALCUM_DAGGER = WEAPONS.register(
+            "orichal_dagger",
+            () -> new DaggerItem(
+                    ModToolTiers.ORICHALCUM,
+                    new Item.Properties().attributes(
+                            SwordItem.createAttributes(ModToolTiers.ORICHALCUM, 2, -2.0F)
+                    )
+            )
+    );
+    public static final DeferredItem<Item> ORICHAL_Scythe = WEAPONS.register(
+            "orichal_scythe",
+            () -> new ScytheItem(
+                    ModToolTiers.ORICHALCUM,
+                    new Item.Properties().attributes(
+                            SwordItem.createAttributes(ModToolTiers.ORICHALCUM, 3, -2.4F)
+                    )
+            )
+    );
+    public static final DeferredItem<Item> ORICHAL_SWORD =
+            WEAPONS.register(
+                    "orichal_sword",
+                    () -> new OrichalSwordItem(
+                            ModToolTiers.ORICHALCUM,
+                            new Item.Properties()
+                    )
+            );
+    public static final DeferredItem<Item> ORICHAL_PICKAXE =
+            WEAPONS.register(
+                    "orichal_pickaxe",
+                    () -> new PickaxeItem(
+                            ModToolTiers.ORICHALCUM,
+                            new Item.Properties().attributes(
+                                    PickaxeItem.createAttributes(
+                                            ModToolTiers.ORICHALCUM,
+                                            1,
+                                            -2.8F
+                                    )
+                            )
+                    )
+            );
+
+    public static final DeferredItem<Item> ORICHAL_AXE =
+            WEAPONS.register(
+                    "orichal_axe",
+                    () -> new AxeItem(
+                            ModToolTiers.ORICHALCUM,
+                            new Item.Properties().attributes(
+                                    AxeItem.createAttributes(
+                                            ModToolTiers.ORICHALCUM,
+                                            6,
+                                            -3.1F
+                                    )
+                            )
+                    )
+            );
+
+    public static final DeferredItem<Item> ORICHAL_SHOVEL =
+            WEAPONS.register(
+                    "orichal_shovel",
+                    () -> new ShovelItem(
+                            ModToolTiers.ORICHALCUM,
+                            new Item.Properties().attributes(
+                                    ShovelItem.createAttributes(
+                                            ModToolTiers.ORICHALCUM,
+                                            1.5F,
+                                            -3.0F
+                                    )
+                            )
+                    )
+            );
+
+    public static final DeferredItem<Item> ORICHAL_HOE =
+            WEAPONS.register(
+                    "orichal_hoe",
+                    () -> new HoeItem(
+                            ModToolTiers.ORICHALCUM,
+                            new Item.Properties().attributes(
+                                    HoeItem.createAttributes(
+                                            ModToolTiers.ORICHALCUM,
+                                            0,
+                                            -3.0F
+                                    )
+                            )
+                    )
+            );
     public static final DeferredItem<Item> Diamond_Scythe = WEAPONS.register(
             "diamond_scythe",
             () -> new ScytheItem(

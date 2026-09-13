@@ -2,11 +2,11 @@
   "description": { "translate": "enchantment.evocore.double_jump" },
   "supported_items": "#minecraft:enchantable/foot_armor",
   "primary_items": "#evocore:double_jump_primary",
-  "weight": 2,
+    "weight": 4,
   "max_level": 2,
   "min_cost": { "base": 10, "per_level_above_first": 15 },
   "max_cost": { "base": 40, "per_level_above_first": 15 },
   "anvil_cost": 4,
   "slots": ["feet"],
   "effects": {}
-}
+  }

@@ -1,14 +1,17 @@
 package com.evo.evocore;
 
 import com.evo.evocore.effect.ModEffects;
+import com.evo.evocore.item.ModArmorMaterials;
 import com.evo.evocore.item.ModCreativeModeTabs;
 import com.evo.evocore.item.ModItems;
 import com.evo.evocore.network.CirclePacket;
 import com.evo.evocore.network.DoubleJumpHandler;
 import com.evo.evocore.network.DoubleJumpPacket;
 import com.evo.evocore.network.ModNetworking;
+import com.evo.evocore.sound.ModSounds;
 import com.evo.evocore.tag.ModTags;
 import com.mojang.logging.LogUtils;
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModContainer;
@@ -36,15 +39,20 @@ public class EvoCore {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModItems.ORICHALCUM.register(modEventBus);
         ModCreativeModeTabs.CREATIVE_MODE_TABS.register(modEventBus);
         ModTags.PULL_WEAPONS.registry();
         ModEffects.register(modEventBus);
         modEventBus.addListener(ModNetworking::register);
-
+        ModSounds.register(modEventBus);
+        ModArmorMaterials.ARMOR_MATERIALS.register(modEventBus);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
     private void commonSetup(FMLCommonSetupEvent event) {
 
+    }
+    public static ResourceLocation id(String path) {
+        return ResourceLocation.fromNamespaceAndPath(MODID, path);
     }
 
     private void registerPayloads(RegisterPayloadHandlersEvent event) {

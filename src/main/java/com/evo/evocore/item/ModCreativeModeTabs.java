@@ -23,6 +23,9 @@ public class ModCreativeModeTabs {
                                 ModItems.WEAPONS.getEntries().forEach(holder ->
                                         output.accept(holder.get())
                                 );
+                                ModItems.ORICHALCUM.getEntries().forEach(holder ->
+                                        output.accept(holder.get())
+                                );
 
                             })
                             .build()

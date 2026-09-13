@@ -6,13 +6,13 @@
   },
   "perspectives": {
     "gui": {
-      "parent": "evocore:item/wood_katana_2d"
+      "parent": "evocore:item/wood_katana_3d"
     },
     "ground": {
-      "parent": "evocore:item/wood_katana_2d"
+      "parent": "evocore:item/wood_katana_3d"
     },
     "fixed": {
-      "parent": "evocore:item/wood_katana_2d"
+      "parent": "evocore:item/wood_katana_3d"
     }
   }
 }

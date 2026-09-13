@@ -6,13 +6,13 @@
   },
   "perspectives": {
     "gui": {
-      "parent": "evocore:item/netherite_dagger_2d"
+      "parent": "evocore:item/netherite_dagger_3d"
     },
     "ground": {
-      "parent": "evocore:item/netherite_dagger_2d"
+      "parent": "evocore:item/netherite_dagger_3d"
     },
     "fixed": {
-      "parent": "evocore:item/netherite_dagger_2d"
+      "parent": "evocore:item/netherite_dagger_3d"
     }
   }
 }
